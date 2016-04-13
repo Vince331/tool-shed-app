@@ -1,0 +1,9 @@
+<h1>tools index</h1>
+<% @tools.each do |tool| %>
+<div>
+<%= link_to tool.name, tool_path(tool) %>
+</div>
+<% end %>
+<hr>
+<p><%= link_to "new tool", new_tool_path  %></p>
+

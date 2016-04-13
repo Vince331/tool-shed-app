@@ -1,0 +1,17 @@
+<h1>tool show</h1>
+
+<div>
+  Name: <%= @tool.name %>
+</div>
+
+<div>
+  Quantity: <%= @tool.quantity %>
+</div>
+
+<div>
+  Price: <%= @tool.price %>
+</div>
+<p><%= link_to "edit tool", edit_tool_path  %></p>
+<hr>
+
+<p><%= link_to "delete tool", tool_path(@tool), method: :delete  %></p>
